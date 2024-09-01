@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #eaeaea;
+        }
+        header {
+            background: #1a73e8;
+            color: #fff;
+            padding: 20px 0;
+        }
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            position: relative;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            overflow: hidden;
+        }
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+        main {
+            padding: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .service-item {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .service-item:hover {
+            transform: scale(1.05);
+        }
+        .service-item h3 {
+            margin-bottom: 10px;
+        }
+        form {
+            display: grid;
+            gap: 10px;
+        }
+        form label {
+            display: block;
+        }
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px 20px;
+            background: #1a73e8;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background: #1558b0;
+        }
+        footer {
+            background: #1a73e8;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Student Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <img src="https://i.postimg.cc/sQW21f70/IMG-20240901-094756.jpg" alt="Student Hub Hero Image">
+        <div class="hero-content">
+            <h2>Welcome to Student Hub</h2>
+            <p>Your go-to platform for academic resources, tips, and more.</p>
+        </div>
+    </section>
+    
+    <main>
+        <section id="resources" class="container">
+            <h2>Available Resources</h2>
+            <div class="services">
+                <div class="service-item">
+                    <h3>Study Guides</h3>
+                    <p>Access comprehensive guides to help you ace your exams.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Tutoring Services</h3>
+                    <p>Get personalized help from experienced tutors.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Student Forums</h3>
+                    <p>Join discussions and collaborate with peers.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Reach out to discuss potential projects or collaborations.</p>
+                <form action="mailto:karandiwa133@gmail.com" method="POST" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Student Hub. All rights reserved.</p>
+    </footer>
+</body>
+  </html>
+  
